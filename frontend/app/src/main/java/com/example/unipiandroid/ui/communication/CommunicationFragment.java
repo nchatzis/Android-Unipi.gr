@@ -99,7 +99,7 @@ public class CommunicationFragment extends Fragment {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                    String url = "http://192.168.1.14:8080/api/messages/";
+                    String url = "SERVER/api/messages/";
                     JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
                             Request.Method.POST,
                             url,
