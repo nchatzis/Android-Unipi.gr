@@ -59,7 +59,7 @@ public class LoginPage extends AppCompatActivity {
                 String password = String.valueOf(editTextPassword.getText());
 
                 if(!username.isEmpty() && !password.isEmpty()) {
-                    String url = "http://192.168.1.14:8080/api/admin/login";
+                    String url = "SERVER/api/admin/login";
                     JsonObjectRequest loginRequest = createLoginRequest(url,username,password);
                     mRequestQueue.add(loginRequest);
                 } else {
