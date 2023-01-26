@@ -141,7 +141,7 @@ public class AdminInboxFragment extends Fragment {
 
         sharedPreferences = getActivity().getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
         mRequestQueue = Volley.newRequestQueue(requireContext());
-        String url = "http://192.168.1.14:8080/api/messages/page/";
+        String url = "SERVER/api/messages/page/";
         mRequestQueue.add(getMessagePageRequest(url,1));
 
         currentPage=1;
