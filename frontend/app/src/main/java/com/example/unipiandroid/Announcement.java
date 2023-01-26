@@ -55,7 +55,7 @@ public class Announcement extends AppCompatActivity {
         detailsTextView = findViewById(R.id.details);
         authorTextView = findViewById(R.id.author);
         mRequestQueue = Volley.newRequestQueue(getApplicationContext());
-        String url = "http://192.168.1.14:8080/api/news/"+id;
+        String url = "SERVER/api/news/"+id;
         mRequestQueue.add(getNewsRequest(url));
 
         sharedPreferences = getApplicationContext().getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
