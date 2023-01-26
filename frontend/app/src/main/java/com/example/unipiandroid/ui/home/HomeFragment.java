@@ -51,7 +51,7 @@ public class HomeFragment extends Fragment {
     private int totalElements=0;
     private int totalPages;
     String currentType="CURRENT_NEWS";
-    final String url = "http://192.168.1.14:8080/api/news/";
+    final String url = "SERVER/api/news/";
     private RequestQueue mRequestQueue;
     private int[] news_ids = new int[3];
 
