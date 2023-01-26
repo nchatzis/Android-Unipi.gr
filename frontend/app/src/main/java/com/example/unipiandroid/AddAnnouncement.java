@@ -133,7 +133,7 @@ public class AddAnnouncement extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View v) {
-                String url = "http://192.168.1.14:8080/api/news/";
+                String url = "SERVER/api/news/";
                 String newsType = newsTypeDD.getSelectedItem().toString();
                 if ("ΕΠΙΚΑΙΡΟΤΗΤΑ".equals(newsType)) {
                     newsType = "CURRENT_NEWS";
