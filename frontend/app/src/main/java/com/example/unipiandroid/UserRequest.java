@@ -97,7 +97,7 @@ public class UserRequest extends AppCompatActivity {
         editor.remove("msg_id");
         editor.apply();
 
-        String url = "http://192.168.1.14:8080/api/messages/";
+        String url = "SERVER:8080/api/messages/";
 
         mRequestQueue = Volley.newRequestQueue(getApplicationContext());
         mRequestQueue.add(getMessageData(url,id));
